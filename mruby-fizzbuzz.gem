@@ -1,0 +1,6 @@
+name: mruby-fizzbuzz
+description: FizzBuzz class
+author: Masaya Konishi
+website: https://github.com/ore-public/mruby-fizzbuzz
+protocol: git
+repository: https://github.com/ore-public/mruby-fizzbuzz.git
