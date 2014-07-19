@@ -1,5 +1,6 @@
 # mruby-fizzbuzz   [![Build Status](https://travis-ci.org/ore-public/mruby-fizzbuzz.png?branch=master)](https://travis-ci.org/ore-public/mruby-fizzbuzz)
-FizzBuzz class
+By extending the Array class and added fizzbuzz method.
+
 ## install by mrbgems 
 - add conf.gem line to `build_config.rb` 
 
