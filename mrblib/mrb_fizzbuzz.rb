@@ -1,5 +1,5 @@
-class FizzBuzz
-  def bye
-    self.hello + " bye"
+class Array
+  def fizzbuzz2
+    
   end
 end
