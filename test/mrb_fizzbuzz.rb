@@ -2,16 +2,10 @@
 ## FizzBuzz Test
 ##
 
-assert("FizzBuzz#hello") do
-  t = FizzBuzz.new "hello"
-  assert_equal("hello", t.hello)
+assert("Array#fizzbuzz") do
+  array = (1..16).to_a
+  assert_equal(
+    [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz',11,'Fizz',13,14,'FizzBuzz',16],
+    array.fizzbuzz)
 end
 
-assert("FizzBuzz#bye") do
-  t = FizzBuzz.new "hello"
-  assert_equal("hello bye", t.bye)
-end
-
-assert("FizzBuzz.hi") do
-  assert_equal("hi!!", FizzBuzz.hi)
-end
