@@ -23,11 +23,11 @@ static mrb_value mrb_fizzbuzz(mrb_state *mrb, mrb_value self)
   for (i = 0; i < RARRAY_LEN(self); ++i) {
     v = RARRAY_PTR(self)[i];
     
-    if((v.value.i % 15) == 0){
+    if((mrb_fixnum(v) % 15) == 0){
       fizzbuzz = mrb_str_new_cstr(mrb, "FizzBuzz");
-    } else if((v.value.i % 5) == 0) {
+    } else if((mrb_fixnum(v) % 5) == 0) {
       fizzbuzz = mrb_str_new_cstr(mrb, "Buzz");
-    } else if((v.value.i % 3) == 0) {
+    } else if((mrb_fixnum(v) % 3) == 0) {
       fizzbuzz = mrb_str_new_cstr(mrb, "Fizz");
     } else {
       fizzbuzz = v;
